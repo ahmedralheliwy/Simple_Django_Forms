@@ -1,23 +1,40 @@
-<!-- myapp/templates/base.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}My Django App{% endblock %}</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Dark theme CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap-dark.min.css" rel="stylesheet">
-</head>
-<body class="bg-dark text-light">
-    <div class="container">
-        {% block content %}{% endblock %}
-    </div>
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+{% extends 'base.html' %}
 
-<div class="btn btn-primary">Ok</div>
-</body>
-</html>
+{% block title %}
+   Sign Up 
+{% endblock title %}
+
+
+{% block customize %}
+    class='m-3'
+{% endblock customize %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-3 mt-3 text-primary"><h1>Sign Up</h1></div>
+</div>
+<div class="container MyColor mt-3 border border-secondary-subtle">
+  <form >
+  <div class="mb-3">
+    <label for="userid" class="form-label">Username</label>
+    <input type="text" class="form-control" id="userid" aria-describedby="userHelp">
+    <div id="userHelp" class="form-text">You will use it to login as email.</div>
+  </div>
+  <div class="mb-3">
+    <label for="emailid" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="emailid" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="passwordid" class="form-label">Password</label>
+    <input type="password" class="form-control" id="passwordid">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Agree to our policies</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+{% endblock content %}
+    
+    

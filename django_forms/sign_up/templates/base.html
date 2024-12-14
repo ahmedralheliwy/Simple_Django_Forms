@@ -1,31 +1,17 @@
-<html lang="en" data-bs-theme="dark" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    {% block header %}
-        
-    {% endblock header %}
-
        <title>
-        {% block title %}
-        {% endblock title %}
+            {% block title %}{% endblock title %}
        </title> 
-
+    {% load static %}
     {% load bootstrap5 %}
     {% bootstrap_css%}
     {% bootstrap_javascript%}
-
+    <link rel="stylesheet" href="{% static 'css/sign_up.css' %}">
 </head>
-
-
-    
 <body {% block customize %}{% endblock customize %}>
-    
-    {% block content %}
-        
-    {% endblock content %}
-
-    
+    {% block content %}{% endblock content %}
 </body>
 </html>
