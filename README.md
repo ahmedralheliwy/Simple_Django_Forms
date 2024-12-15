@@ -1,3 +1,3 @@
 # Simple Django Forms Web App
 
-![flowChart-1](https://github.com/user-attachments/assets/5d60f518-1eed-4f0e-84a9-4fd23d0d753c)
+![Forms](https://github.com/user-attachments/assets/45cd94a0-4534-4dbb-9365-62f90e91c2d6)
