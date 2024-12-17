@@ -8,4 +8,4 @@ def index(request):
         data=Sign_UpForm(request.POST)
         if data.is_valid():
             data.save()
-    return render(request,'index.html',{'tem_form':Sign_UpForm})
+    return render(request,'index.html',{'form':Sign_UpForm})
