@@ -31,4 +31,7 @@ To get a local copy of this project up and running, follow these steps:
    ```bash
    git clone https://github.com/ahmedralheliwy/simple-django-forms.git
 
-![Forms](https://github.com/user-attachments/assets/45cd94a0-4534-4dbb-9365-62f90e91c2d6)
+   
+![Screenshot_2024-12-20_10-52-58](https://github.com/user-attachments/assets/09fe7c59-d369-4f97-93dd-87418c6be235)
+
+
